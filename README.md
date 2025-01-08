@@ -35,6 +35,7 @@ Prints similar to:
     "linux/386",
     "linux/arm/v7",
     "linux/arm/v6"
+    "linux/mipsel"
   ],
   "emulators": [
     "qemu-aarch64",
@@ -42,7 +43,8 @@ Prints similar to:
     "qemu-i386",
     "qemu-ppc64le",
     "qemu-riscv64",
-    "qemu-s390x"
+    "qemu-s390x",
+    "qemu-mipsel"
   ]
 }
 ```
