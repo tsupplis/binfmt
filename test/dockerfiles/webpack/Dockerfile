@@ -2,7 +2,7 @@ FROM node:12-slim
 
 WORKDIR /js
 
-RUN npm install -g webpack webpack-cli
+RUN npm install -g webpack@4.43.0 webpack-cli@3.3.12
 
 COPY ./package.json /js
 COPY ./package-lock.json /js
@@ -11,6 +11,7 @@ RUN npm install .
 
 COPY . /js
 
+ARG QEMU_STRACE
 RUN webpack\
     --verbose\
     --display=verbose\
